@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Inchoo_Apc>
+            <version>0.1.0</version>
+        </Inchoo_Apc>
+    </modules>
+	<global>
+		<blocks>
+			<apc>
+                <class>Inchoo_Apc_Block</class>
+            </apc>
+		</blocks>
+	</global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Inchoo_Apc before="Mage_Adminhtml">Inchoo_Apc_Adminhtml</Inchoo_Apc>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+	    <adminhtml>
+        <layout>
+            <updates>
+                <inchooapc>
+                    <file>inchooapc.xml</file>
+                </inchooapc>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

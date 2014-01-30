@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<layout>
+    <adminhtml_cache_index>
+        <reference name="content">
+            <block type="apc/adminhtml_cache_additional" name="apc.cache.additional" template="apccache/cache/additional.phtml" after="cache.additional" />
+        </reference>
+    </adminhtml_cache_index>
+</layout>
